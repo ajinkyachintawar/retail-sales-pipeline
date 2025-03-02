@@ -124,3 +124,5 @@ Ajinkya Chintawar <br><br> [MSc Data Analytics | Data Engineer | ML Intern] <br>
 // Improved readability of README on 16 Feb 2025, 14:14
 
 // Improved readability of README on 17 Feb 2025, 16:34
+
+// Updated styling and layout on 02 Mar 2025, 09:14
