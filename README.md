@@ -1,4 +1,4 @@
-Retail Sales Analytics Pipeline
+**Retail Sales Analytics Pipeline**
 
 A complete end-to-end data pipeline project using Apache Airflow, Google Cloud Storage (GCS), BigQuery, and Power BI to ingest, clean, store, and visualize retail sales data.
 
