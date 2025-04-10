@@ -12,20 +12,9 @@ Airflow DAGs clean and load the data into BigQuery
 
 Power BI connects to BigQuery for interactive dashboards
 
-📁 Project Structure
+## 📁 Project Structure
 
-retail-sales-pipeline/
-├── dags/
-│   ├── gcs_to_bigquery_retail_sales.py      # Daily DAG
-│   └── bulk_load_historical_sales.py        # One-time historical loader
-├── docker-compose.yaml                      # Airflow setup
-├── .env.example                             # Env config sample
-├── requirements.txt                         # Python dependencies
-├── test_data/
-│   └── sample_2017-12-31.csv                # Example CSV
-├── dashboard/
-│   └── retail_sales_dashboard.pbix          # Optional Power BI file
-└── README.md                                # This file
+retail-sales-pipeline/ ├── dags/ │ ├── gcs_to_bigquery_retail_sales.py # Daily DAG │ └── bulk_load_historical_sales.py # One-time historical loader ├── docker-compose.yaml # Airflow setup ├── .env.example # Env config sample ├── requirements.txt # Python dependencies ├── test_data/ │ └── sample_2017-12-31.csv # Example CSV ├── dashboard/ │ └── retail_sales_dashboard.pbix # Optional Power BI file └── README.md # This file
 
 🧰 Prerequisites
 
