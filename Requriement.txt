@@ -1,0 +1,13 @@
+# Airflow + Google + Data Tools
+apache-airflow==2.8.1
+apache-airflow-providers-google==10.11.0
+pandas==1.5.3
+google-cloud-storage==2.14.0
+google-cloud-bigquery==3.17.2
+
+# Optional CLI Utilities
+pyarrow>=10.0.0
+requests
+
+# For DAG scheduling and environment
+python-dateutil
