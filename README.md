@@ -84,6 +84,7 @@ Retail Sales Analytics Project Structure
 ## 📊 Power BI Dashboard
 
 Open dashboard/retail_sales_dashboard.pbix
+
 Connect to your BigQuery table: retail_analytics.daily_sales
 
 Visuals included:
@@ -108,5 +109,7 @@ Visuals included:
 
 🙋‍♂️ Author
 
-Ajinkya Chintawar[MSc Data Analytics | Data Engineer | ML Intern]
+Ajinkya Chintawar
+
+[MSc Data Analytics | Data Engineer | ML Intern]
 
