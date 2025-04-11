@@ -1,4 +1,4 @@
-**Retail Sales Analytics Pipeline**
+# Retail Sales Analytics Pipeline
 
 A complete end-to-end data pipeline project using Apache Airflow, Google Cloud Storage (GCS), BigQuery, and Power BI to ingest, clean, store, and visualize retail sales data.
 
@@ -44,17 +44,17 @@ Retail Sales Analytics Project Structure
 
 **1. Clone the repository**
 
-  git clone https://github.com/<your-username>/retail-sales-pipeline.git
-  cd retail-sales-pipeline
+  * git clone https://github.com/<your-username>/retail-sales-pipeline.git
+  * cd retail-sales-pipeline
 
 **2. Create your .env file**
 
-  cp .env.example .env
+  * cp .env.example .env
 
 **3. Edit .env and set values like:**
 
-  AIRFLOW_UID=50000
-  GCP_PROJECT=your-project-id
+  * AIRFLOW_UID=50000
+    GCP_PROJECT=your-project-id
 
 **4. Place your GCP service account key**
 
@@ -64,7 +64,7 @@ Retail Sales Analytics Project Structure
 
 **5. Start Airflow**
 
-  docker-compose up --build -d
+  * docker-compose up --build -d
 
 **6. Access the UI at:** http://localhost:8080Login: airflow / airflow
 
@@ -78,8 +78,8 @@ Retail Sales Analytics Project Structure
 
   * Manual: Use Airflow UI or CLI:
   
-  docker exec -it airflow-docker-airflow-scheduler-1 \
-    airflow dags backfill gcs_to_bigquery_retail_sales -s 2017-12-31 -e 2017-12-31
+    * docker exec -it airflow-docker-airflow-scheduler-1 \
+      airflow dags backfill gcs_to_bigquery_retail_sales -s 2017-12-31 -e 2017-12-31
 
 ## 📊 Power BI Dashboard
 
