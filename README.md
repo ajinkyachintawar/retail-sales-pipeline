@@ -45,18 +45,21 @@ A complete end-to-end data pipeline project using Apache Airflow, Google Cloud S
 ## 🔐 Setup Instructions
 
 **1. Clone the repository**
-
-  * git clone https://github.com/<your-username>/retail-sales-pipeline.git
-  * cd retail-sales-pipeline
+```plaintext
+git clone https://github.com/<your-username>/retail-sales-pipeline.git
+cd retail-sales-pipeline
+```
 
 **2. Create your .env file**
-
-  * cp .env.example .env
+```plaintext
+cp .env.example .env
+```
 
 **3. Edit .env and set values like:**
-
-  * AIRFLOW_UID=50000
-    GCP_PROJECT=your-project-id
+```plaintext
+AIRFLOW_UID=50000
+GCP_PROJECT=your-project-id
+```
 
 **4. Place your GCP service account key**
 
@@ -65,10 +68,12 @@ A complete end-to-end data pipeline project using Apache Airflow, Google Cloud S
   * Place it in the root directory (DO NOT commit it)
 
 **5. Start Airflow**
-
-  * docker-compose up --build -d
-
-**6. Access the UI at:** http://localhost:8080Login: airflow / airflow
+```plaintext
+docker-compose up --build -d
+```
+**6. Access the UI:** 
+ * http://localhost:8080
+ * Login: airflow / airflow
 
 **7. Upload CSV files to GCS**
 
@@ -79,10 +84,10 @@ A complete end-to-end data pipeline project using Apache Airflow, Google Cloud S
 **8 Trigger DAGs**
 
   * Manual: Use Airflow UI or CLI:
-  
-    * docker exec -it airflow-docker-airflow-scheduler-1 \
-      airflow dags backfill gcs_to_bigquery_retail_sales -s 2017-12-31 -e 2017-12-31
-
+ ```plaintext 
+docker exec -it airflow-docker-airflow-scheduler-1 \
+   airflow dags backfill gcs_to_bigquery_retail_sales -s 2017-12-31 -e 2017-12-31
+```
 ## 📊 Power BI Dashboard
 
 * Open dashboard/retail_sales_dashboard.pbix
