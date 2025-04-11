@@ -14,18 +14,20 @@ A complete end-to-end data pipeline project using Apache Airflow, Google Cloud S
 
 ## 📁 Project Structure
 
-Retail Sales Analytics Project Structure
+### Retail Sales Analytics Project Structure
+
+```plaintext
 ├── dags/                          # Airflow DAGs for data pipeline (GCS to BigQuery)
-│   └── gcs_to_bigquery_retail_sales.py
+│   ├── gcs_to_bigquery_retail_sales.py
 │   └── bulk_load_historical_sales.py
-│
 ├── dashboards/                    # Power BI dashboard files
 │   └── Retail_Sales_Insights.pbix
-│
-├── docker-compose.yaml           # Docker setup for Airflow services
-├── Requirement.txt               # Python package dependencies for Airflow
-├── README.md                     # Project documentation
-├── .env.example                  # Example environment config (GCP creds, etc.)
+├── docker-compose.yaml            # Docker setup for Airflow services
+├── Requirement.txt                # Python package dependencies for Airflow
+├── README.md                      # Project documentation
+└── .env.example                   # Example environment config (GCP creds, etc.)
+```
+
 
 
 ## 🧰 Prerequisites
