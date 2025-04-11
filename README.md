@@ -4,13 +4,13 @@ A complete end-to-end data pipeline project using Apache Airflow, Google Cloud S
 
 ## 🚀 Project Overview
 
-This pipeline simulates daily retail sales ingestion:
+*This pipeline simulates daily retail sales ingestion:
 
-Daily CSV files are uploaded to GCS
+*Daily CSV files are uploaded to GCS
 
-Airflow DAGs clean and load the data into BigQuery
+*Airflow DAGs clean and load the data into BigQuery
 
-Power BI connects to BigQuery for interactive dashboards
+*Power BI connects to BigQuery for interactive dashboards
 
 ## 📁 Project Structure
 
