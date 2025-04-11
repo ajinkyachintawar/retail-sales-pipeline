@@ -109,7 +109,7 @@ Retail Sales Analytics Project Structure
 
 🙋‍♂️ Author
 
-Ajinkya Chintawar
+Ajinkya Chintawar [MSc Data Analytics | Data Engineer | ML Intern]
+[LinkedIn Profile](https://www.linkedin.com/in/ajinkya-chintawar/)
 
-[MSc Data Analytics | Data Engineer | ML Intern]
 
