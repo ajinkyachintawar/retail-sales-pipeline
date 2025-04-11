@@ -30,15 +30,15 @@ Retail Sales Analytics Project Structure
 
 ## 🧰 Prerequisites
 
-- Docker + Docker Compose
+* Docker + Docker Compose
 
-- GCP project with:
+* GCP project with:
 
-  - A bucket in GCS
+  * A bucket in GCS
 
-  - BigQuery dataset & table created
+  * BigQuery dataset & table created
 
-- Service account with access to GCS & BigQuery
+* Service account with access to GCS & BigQuery
 
 ## 🔐 Setup Instructions
 
@@ -58,9 +58,9 @@ Retail Sales Analytics Project Structure
 
 **4. Place your GCP service account key**
 
-  - Save your credentials file as: gcp_creds.json
+  * Save your credentials file as: gcp_creds.json
   
-  - Place it in the root directory (DO NOT commit it)
+  * Place it in the root directory (DO NOT commit it)
 
 **5. Start Airflow**
 
@@ -70,42 +70,42 @@ Retail Sales Analytics Project Structure
 
 **7. Upload CSV files to GCS**
 
-  - Format: daily_sales/YYYY-MM-DD.csv
+  * Format: daily_sales/YYYY-MM-DD.csv
   
-  - Example: daily_sales/2017-12-31.csv
+  * Example: daily_sales/2017-12-31.csv
 
 **8 Trigger DAGs**
 
-  Manual: Use Airflow UI or CLI:
+  * Manual: Use Airflow UI or CLI:
   
   docker exec -it airflow-docker-airflow-scheduler-1 \
     airflow dags backfill gcs_to_bigquery_retail_sales -s 2017-12-31 -e 2017-12-31
 
 ## 📊 Power BI Dashboard
 
-Open dashboard/retail_sales_dashboard.pbix
+* Open dashboard/retail_sales_dashboard.pbix
 
-Connect to your BigQuery table: retail_analytics.daily_sales
+* Connect to your BigQuery table: retail_analytics.daily_sales
 
-Visuals included:
+* Visuals included:
 
-  - Total Revenue
+  * Total Revenue
   
-  - Orders by Region
+  * Orders by Region
   
-  - Top-Selling Products
+  * Top-Selling Products
   
-  - Daily Trends
+  * Daily Trends
 
 ## ✅ Features
 
-  - Handles daily or bulk file uploads
+  * Handles daily or bulk file uploads
   
-  - Cleans and standardizes CSV columns
+  * Cleans and standardizes CSV columns
   
-  - Safe to run even when daily files are missing
+  * Safe to run even when daily files are missing
   
-  - Backfill-ready for testing
+  * Backfill-ready for testing
 
 🙋‍♂️ Author
 
